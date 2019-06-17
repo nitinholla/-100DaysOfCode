@@ -1,0 +1,39 @@
+#Python Code Snippets
+
+1. You've got chickens (2 legs), cows (4 legs) and pigs (4 legs) on your farm. Return the total number of legs on your farm.
+animals(2, 3, 5) ➞ 36
+
+animals(1, 2, 3) ➞ 22
+
+animals(5, 2, 8) ➞ 50
+
+Ans:
+def animals(chickens, cows, pigs):
+	return (chickens*2)+(cows*4)+(pigs*4)
+	
+	
+def animals(chicken,cow,pig):
+	return chicken*2 + (cow+pig)*4	
+	
+def animals(chickens, cows, pigs):
+	return chickens*2 + (cows*4 + pigs*4)
+
+
+2. Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+Ans:
+def addition(num):
+	num +=1
+	return num
+
+3. Create a function that takes a number as its only argument and returns True if it's less than or equal to zero, otherwise return False
+Ans:
+def lessThanOrEqualToZero(num):
+	if(num <= 0):
+		return True
+	else:
+		return False                 
+
+def lessThanOrEqualToZero(num):
+  return num <= 0
+
+  
