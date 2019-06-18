@@ -36,4 +36,91 @@ def lessThanOrEqualToZero(num):
 def lessThanOrEqualToZero(num):
   return num <= 0
 
-  
+4. Write two functions:
+
+to_int() : A function to convert a string to an integer.
+to_str() : A function to convert an integer to a string.
+example: to_int("77") ➞ 77
+
+to_int("532") ➞ 532
+
+to_str(77) ➞ "77"
+
+to_str(532) ➞ "532"
+
+Ans:
+def to_int(txt):
+	return int(txt)
+
+def to_str(num):
+	return str(num)
+	
+5. Write a function that takes the base and height of a triangle and return its area.
+tri_area(3, 2) ➞ 3
+
+tri_area(7, 4) ➞ 14
+
+tri_area(10, 10) ➞ 50
+
+Ans:
+def tri_area(base, height):
+	area = (base * height) / 2
+	return area
+def tri_area(base, height):
+	return base * height * .5
+def tri_area(base, height):
+	return (base * height) / 2
+
+6. Create a function that takes in three arguments (prob, prize, pay) and returns true if prob * prize > pay; otherwise return false.
+profitable_gamble(0.2, 50, 9) ➞ True
+
+profitable_gamble(0.9, 1, 2) ➞ False
+
+profitable_gamble(0.9, 3, 2) ➞ True
+
+Ans:
+def profitable_gamble(prob, prize, pay):
+	payble = prob * prize
+	if(payble > pay):
+		return True
+	else:
+		return False
+def profitable_gamble(prob, prize, pay):
+	return prob * prize > pay
+def profitable_gamble(prob, prize, pay):
+	outcome = prob * prize - pay
+	if outcome > 0:
+		return True
+	else:
+		return False
+def profitable_gamble(prob, prize, pay):
+	return  (prob * prize - pay) > 0
+def profitable_gamble(prob, prize, pay):
+	if (prob * prize) - pay > 0:
+		return True
+	return False
+
+7. Create a function that returns True if an integer is divisible by 5, and false otherwise.
+divisible_by_five(5) ➞ True
+
+divisible_by_five(-55) ➞ True
+
+divisible_by_five(37) ➞ False
+
+Ans:
+def divisible_by_five(n):
+	if(n%5==0):
+		return True
+	else:
+		return False
+		
+def divisible_by_five(n):
+	return not n % 5
+def divisible_by_five(n):
+	return n % 5 == 0
+def divisible_by_five(n):
+	if (n%5)==0:
+		return True
+	return False
+	
+	
